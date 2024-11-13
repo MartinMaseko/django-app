@@ -8,13 +8,12 @@ from .forms import VolunteerForm
 
 # Create your views here.
 def home_page(request):
-    """Renders the home page if the user is authenticated, otherwise redirects to the login page.
+    """Renders the home page if the user is authenticated, 
+    otherwise redirects to the login page.
 
-    Args:
-        request (HttpRequest): The HTTP request object.
+    :param :request (HttpRequest): The HTTP request object.
 
-    Returns:
-        HttpResponse: The rendered home page or a redirect to the login page.
+    :returns:HttpResponse: The rendered home page or a redirect to the login page.
     """
     if request.user.is_authenticated:
         return render(request, 'pages/home.html')
@@ -25,7 +24,7 @@ def home_page(request):
 def about_page(request):
     """Renders the about page.
 
-    Args:
+    :param :
         request (HttpRequest): The HTTP request object.
 
     Returns:
@@ -42,7 +41,7 @@ def authenticate_user(request):
     - Authenticates with Django's `authenticate`.
     - Redirects to login on failure, shows user on success.
     
-    Args:
+   :param :
         request (HttpRequest): The Django HTTP request object containing the POST data.
 
     Returns:
@@ -63,7 +62,7 @@ def register_user(request):
     """
     Registers a new user on the system.
 
-    Args:
+    :param :
         request (HttpRequest): The HTTP request object containing form data.
 
     Returns:
