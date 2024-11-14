@@ -64,13 +64,13 @@ def register_user(request):
     """
     Registers a new user on the system.
 
-    Args:
-        request (HttpRequest): The HTTP request object containing form data.
+    :param: request (HttpRequest): The HTTP request object containing form data.
 
-    Returns:
-        HttpResponse:
+    :Returns: HttpResponse:
             * An `HttpResponseRedirect` object redirecting to the login page (on successful registration).
             * An `HttpResponse` object rendering the registration form (on GET request or invalid form submission).
+    
+    :rtype: HTTP object
     """
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
