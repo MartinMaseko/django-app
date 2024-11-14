@@ -42,12 +42,13 @@ def authenticate_user(request):
     - Authenticates with Django's `authenticate`.
     - Redirects to login on failure, shows user on success.
     
-    Args:
-        request (HttpRequest): The Django HTTP request object containing the POST data.
+    :param: request (HttpRequest): The Django HTTP request object containing the POST data.
 
     Returns:
         HttpResponseRedirect: A redirect response object 
         directing the user to either the login page (on failure) or a specific page after success.
+
+    :rtype: HTTP object
     """
     username = request.POST.get('username')
     password = request.POST.get('password')
