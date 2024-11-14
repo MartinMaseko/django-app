@@ -10,11 +10,11 @@ from .forms import VolunteerForm
 def home_page(request):
     """Renders the home page if the user is authenticated, otherwise redirects to the login page.
 
-    Args:
-        request (HttpRequest): The HTTP request object.
+    :param :request (HttpRequest): The HTTP request object.
 
-    Returns:
-        HttpResponse: The rendered home page or a redirect to the login page.
+    Returns: HttpResponse: The rendered home page or a redirect to the login page.
+
+    :rtype: HTTP object
     """
     if request.user.is_authenticated:
         return render(request, 'pages/home.html')
