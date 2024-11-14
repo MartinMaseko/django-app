@@ -25,11 +25,11 @@ def home_page(request):
 def about_page(request):
     """Renders the about page.
 
-    Args:
-        request (HttpRequest): The HTTP request object.
+    :param: request (HttpRequest): The HTTP request object.
 
-    Returns:
-        HttpResponse: The rendered HTML response.
+    Returns: HttpResponse: The rendered HTML response.
+
+    :rtype: HTTP object
     """
     return render(request, 'pages/about.html')
 
