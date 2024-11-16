@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../Documents/Software Course/HyperionDev Code Examples"
+		},
+		{
+			"path": "../Documents/Software Course/task1_project"
+		},
+		{
+			"path": "../Bootstrap Task"
+		},
+		{
+			"path": "../Jewellery-Store"
+		},
+		{
+			"path": "../sphinx_maths"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

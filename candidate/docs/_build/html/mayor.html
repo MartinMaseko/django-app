@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mayor package &mdash; django 00.00.8000 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5fa5e8bb"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="mayor" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            django
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">mayor</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">mayor package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mayor.admin">mayor.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mayor.apps">mayor.apps module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.apps.MayorConfig"><code class="docutils literal notranslate"><span class="pre">MayorConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mayor.forms">mayor.forms module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.forms.VolunteerForm"><code class="docutils literal notranslate"><span class="pre">VolunteerForm</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mayor.models">mayor.models module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.models.Volunteer"><code class="docutils literal notranslate"><span class="pre">Volunteer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mayor.tests">mayor.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mayor.views">mayor.views module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.views.about_page"><code class="docutils literal notranslate"><span class="pre">about_page()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.views.authenticate_user"><code class="docutils literal notranslate"><span class="pre">authenticate_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.views.home_page"><code class="docutils literal notranslate"><span class="pre">home_page()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.views.logout_view"><code class="docutils literal notranslate"><span class="pre">logout_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.views.register_user"><code class="docutils literal notranslate"><span class="pre">register_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.views.register_volunteer"><code class="docutils literal notranslate"><span class="pre">register_volunteer()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mayor.views.user_login"><code class="docutils literal notranslate"><span class="pre">user_login()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mayor">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">mayor</a></li>
+      <li class="breadcrumb-item active">mayor package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/mayor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mayor-package">
+<h1>mayor package<a class="headerlink" href="#mayor-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-mayor.admin">
+<span id="mayor-admin-module"></span><h2>mayor.admin module<a class="headerlink" href="#module-mayor.admin" title="Link to this heading"></a></h2>
+</section>
+<section id="module-mayor.apps">
+<span id="mayor-apps-module"></span><h2>mayor.apps module<a class="headerlink" href="#module-mayor.apps" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mayor.apps.MayorConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mayor.apps.</span></span><span class="sig-name descname"><span class="pre">MayorConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/apps.html#MayorConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.apps.MayorConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.apps.MayorConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#mayor.apps.MayorConfig.default_auto_field" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.apps.MayorConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'mayor'</span></em><a class="headerlink" href="#mayor.apps.MayorConfig.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mayor.forms">
+<span id="mayor-forms-module"></span><h2>mayor.forms module<a class="headerlink" href="#module-mayor.forms" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mayor.forms.</span></span><span class="sig-name descname"><span class="pre">VolunteerForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/forms.html#VolunteerForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.forms.VolunteerForm" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<p>Represents a volunteer.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#mayor.forms.VolunteerForm.name" title="Link to this definition"></a></dt>
+<dd><p>The full name of the volunteer (required).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, max_length=100</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#mayor.forms.VolunteerForm.email" title="Link to this definition"></a></dt>
+<dd><p>The volunteer’s email address (required).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.phone_number">
+<span class="sig-name descname"><span class="pre">phone_number</span></span><a class="headerlink" href="#mayor.forms.VolunteerForm.phone_number" title="Link to this definition"></a></dt>
+<dd><p>The volunteer’s phone number
+(optional).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, max_length=15, blank=True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">)</span> <span class="pre">(str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mayor.forms.VolunteerForm.__str__" title="Link to this definition"></a></dt>
+<dd><p>Returns a string representation of the volunteer object,
+typically including their name.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/mayor/forms.html#VolunteerForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.forms.VolunteerForm.Meta" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'__all__'</span></em><a class="headerlink" href="#mayor.forms.VolunteerForm.Meta.fields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#mayor.forms.VolunteerForm.Meta.model" title="Link to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="#mayor.models.Volunteer" title="mayor.models.Volunteer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Volunteer</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'phone_number':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mayor.forms.VolunteerForm.base_fields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#mayor.forms.VolunteerForm.declared_fields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="mayor.forms.VolunteerForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#mayor.forms.VolunteerForm.media" title="Link to this definition"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mayor.models">
+<span id="mayor-models-module"></span><h2>mayor.models module<a class="headerlink" href="#module-mayor.models" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mayor.models.Volunteer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mayor.models.</span></span><span class="sig-name descname"><span class="pre">Volunteer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/models.html#Volunteer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.models.Volunteer" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Represents a volunteer .</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#mayor.models.Volunteer.name" title="Link to this definition"></a></dt>
+<dd><p>The full name of the volunteer (required).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, max_length=100</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#mayor.models.Volunteer.email" title="Link to this definition"></a></dt>
+<dd><p>The volunteer’s email address (required).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.phone_number">
+<span class="sig-name descname"><span class="pre">phone_number</span></span><a class="headerlink" href="#mayor.models.Volunteer.phone_number" title="Link to this definition"></a></dt>
+<dd><p>The volunteer’s phone number
+(optional).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, max_length=15, blank=True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">)</span> <span class="pre">(str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mayor.models.Volunteer.__str__" title="Link to this definition"></a></dt>
+<dd><p>Returns a string representation of the volunteer object,
+typically including their name.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#mayor.models.Volunteer.DoesNotExist" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#mayor.models.Volunteer.MultipleObjectsReturned" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#id0" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#mayor.models.Volunteer.id" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#id1" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mayor.models.Volunteer.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#mayor.models.Volunteer.objects" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">phone_number</span></span><a class="headerlink" href="#id2" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mayor.tests">
+<span id="mayor-tests-module"></span><h2>mayor.tests module<a class="headerlink" href="#module-mayor.tests" title="Link to this heading"></a></h2>
+</section>
+<section id="module-mayor.views">
+<span id="mayor-views-module"></span><h2>mayor.views module<a class="headerlink" href="#module-mayor.views" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mayor.views.about_page">
+<span class="sig-prename descclassname"><span class="pre">mayor.views.</span></span><span class="sig-name descname"><span class="pre">about_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/views.html#about_page"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.views.about_page" title="Link to this definition"></a></dt>
+<dd><p>Renders the about page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param<span class="colon">:</span></dt>
+<dd class="field-odd"><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+</dl>
+<p>Returns: HttpResponse: The rendered HTML response.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HTTP object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mayor.views.authenticate_user">
+<span class="sig-prename descclassname"><span class="pre">mayor.views.</span></span><span class="sig-name descname"><span class="pre">authenticate_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/views.html#authenticate_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.views.authenticate_user" title="Link to this definition"></a></dt>
+<dd><p>Logs in a user based on POST data.</p>
+<ul class="simple">
+<li><p>Retrieves username and password from POST data.</p></li>
+<li><p>Authenticates with Django’s <cite>authenticate</cite>.</p></li>
+<li><p>Redirects to login on failure, shows user on success.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Param<span class="colon">:</span></dt>
+<dd class="field-odd"><p>request (HttpRequest): The Django HTTP request object containing the POST data.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A redirect response object
+directing the user to either the login page (on failure) or a specific page after success.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponseRedirect</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>HTTP object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mayor.views.home_page">
+<span class="sig-prename descclassname"><span class="pre">mayor.views.</span></span><span class="sig-name descname"><span class="pre">home_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/views.html#home_page"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.views.home_page" title="Link to this definition"></a></dt>
+<dd><p>Renders the home page if the user is authenticated, otherwise redirects to the login page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>(</strong><strong>HttpRequest</strong><strong>)</strong> (<em>:request</em>) – The HTTP request object.</p>
+</dd>
+</dl>
+<p>Returns: HttpResponse: The rendered home page or a redirect to the login page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HTTP object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mayor.views.logout_view">
+<span class="sig-prename descclassname"><span class="pre">mayor.views.</span></span><span class="sig-name descname"><span class="pre">logout_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/views.html#logout_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.views.logout_view" title="Link to this definition"></a></dt>
+<dd><p>Logs out the current user and redirects to the login page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The incoming HTTP request.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The response redirecting to the login page.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mayor.views.register_user">
+<span class="sig-prename descclassname"><span class="pre">mayor.views.</span></span><span class="sig-name descname"><span class="pre">register_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/views.html#register_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.views.register_user" title="Link to this definition"></a></dt>
+<dd><p>Registers a new user on the system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param<span class="colon">:</span></dt>
+<dd class="field-odd"><p>request (HttpRequest): The HTTP request object containing form data.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>HttpResponse:
+* An <cite>HttpResponseRedirect</cite> object redirecting to the login page (on successful registration).
+* An <cite>HttpResponse</cite> object rendering the registration form (on GET request or invalid form submission).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HTTP object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mayor.views.register_volunteer">
+<span class="sig-prename descclassname"><span class="pre">mayor.views.</span></span><span class="sig-name descname"><span class="pre">register_volunteer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/views.html#register_volunteer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.views.register_volunteer" title="Link to this definition"></a></dt>
+<dd><p>Registers a new volunteer based on the submitted form data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The Django HTTP request object containing form data
+or indicating the HTTP method.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>A rendered template (<cite>pages/volunteer.html</cite>) with an empty form on GET requests.</p></li>
+<li><p>A redirect response to the homepage (<cite>‘home’</cite>) on successful POST requests.</p></li>
+<li><p>A rendered template with the invalid form pre-populated on invalid POST requests.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mayor.views.user_login">
+<span class="sig-prename descclassname"><span class="pre">mayor.views.</span></span><span class="sig-name descname"><span class="pre">user_login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mayor/views.html#user_login"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mayor.views.user_login" title="Link to this definition"></a></dt>
+<dd><p>Handles user login requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The Django request object.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>A redirect response to the home page if login is successful.</p></li>
+<li><p>An HTTP response rendering the login form template for GET requests.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-mayor">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-mayor" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="mayor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, martin maseko.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
