@@ -1,56 +1,48 @@
 # Candidate Django Application
-This is a django application for a candidate with a HTML template 
-that uses bootstrap and has data driven compenents to store volunteers
-and has a registration feature.
 
-## Installation
+This Django application features:
 
-### Prerequisites
+* HTML templates with Bootstrap styling
+* Data-driven components for managing volunteers
+* User registration with Django authentication
+* SQLite database backend
 
-Python 3.x (Specify the required version)
-### Dependencies
-* **Django:** The web framework powering the application.
-* **Sphinx:** Documentation generation tool
-* **psycopg2:** PostgreSQL database adapter
-* **djangorestframework:** REST framework for building APIs 
-* **Pillow:** Python Imaging Library for image processing 
-* **Celery:** Distributed task queue
-* **Requests:** For making HTTP requests
-* **Jinja2:** Templating engin
+## Installation and Setup
 
-### Instructions
-1. Clone the repository
-* git clone https://github.com/MartinMaseko/django-app.git
+**Prerequisites:**
 
-2. Install dependencies
-* pip install -r requirements.txt
+- Python 3.9.10
 
-## Usage
-* python manage.py runserver
-* Access the application in your web browser at http://localhost:8000
+**Steps:**
 
-## steps necessary to build and run application
+1. **Clone the Repository:**
+   git clone [https://github.com/MartinMaseko/django-app.git]
 
-### Activate the Virtual Environment
+2. **Activate Virtual Environment**
 
-### Windows
+    myenv\Scripts\activate
 
-myenv\Scripts\activate
+3. **Install Dependencies**
 
-### macOS/Linux:
-myenv/bin/activate
+    pip install -r requirements.txt
 
-### Install Dependencies
+4. **Build the Docker Image**
 
-pip install -r requirements.txt
+    **Optional**
+    If you're starting a new database or have made changes to models, 
+    run these commands:
 
-### Build the Docker Image
+    python manage.py makemigrations mayor
+    
+    python manage.py migrate
 
-docker build -t django-app.
+    docker build -t django-app .
 
-### Run the Application
+5. **Run the Application**
 
-docker run -p 8000:8000 django-app
+    docker run -p 8000:8000 django-app
+
+    Access the application in your web browser at http://localhost:8000.
 
 ## Features
 * HTML
