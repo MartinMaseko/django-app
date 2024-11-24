@@ -19,5 +19,5 @@ class Volunteer(models.Model):
     email = models.EmailField()
     phone_number = models.CharField(max_length=15, blank=True)
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
